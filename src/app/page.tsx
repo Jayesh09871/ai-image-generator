@@ -1,19 +1,19 @@
-import { Button } from "~/components/ui/button";
-import { Card, CardContent } from "~/components/ui/card";
 import {
-  Sparkles,
-  Zap,
-  Star,
   ArrowRight,
-  ImageIcon,
-  Scissors,
-  Expand,
-  Target,
-  Download,
   CheckCircle2,
+  Download,
+  Expand,
+  ImageIcon,
   Play,
+  Scissors,
+  Sparkles,
+  Star,
+  Target,
+  Zap,
 } from "lucide-react";
 import Link from "next/link";
+import { Button } from "~/components/ui/button";
+import { Card, CardContent } from "~/components/ui/card";
 
 export default function HomePage() {
   const features = [
@@ -91,12 +91,13 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 shadow-lg">
+              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 shadow-lg">
                 <Sparkles className="h-5 w-5 text-white" />
               </div>
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-xl font-bold text-transparent">
-                AI Image Editor
+              <span className="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-xl font-bold text-transparent">
+                AI IMAGE EDITOR
               </span>
+              
             </div>
 
             <div className="hidden items-center space-x-8 md:flex">
@@ -142,15 +143,15 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
             <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-blue-200/60 bg-blue-100/30 px-4 py-2 text-sm">
-              <Sparkles className="h-4 w-4 text-blue-600" />
-              <span className="font-medium text-blue-700">
-                Powered by Advanced AI
-              </span>
+             <Sparkles className="h-4 w-4 text-pink-500 drop-shadow-[0_0_6px_rgba(255,100,100,0.7)]" />
+<span className="font-medium bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent drop-shadow-[0_0_8px_rgba(255,100,100,0.6)]">
+  Powered by Advanced AI
+</span>
             </div>
 
             <h1 className="mb-6 text-4xl font-bold tracking-tight text-slate-800 sm:text-6xl">
               Transform Images with{" "}
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent">
                 AI Magic
               </span>
             </h1>
@@ -220,7 +221,7 @@ export default function HomePage() {
           <div className="mx-auto mb-16 max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-slate-800 sm:text-4xl">
               Powerful AI Tools at Your{" "}
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent">
                 Fingertips
               </span>
             </h2>
@@ -291,7 +292,7 @@ export default function HomePage() {
             ].map((item, index) => (
               <div key={index} className="relative">
                 <div className="mb-4 flex items-center">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-lg font-bold text-white shadow-lg">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-lg font-bold text-white shadow-lg">
                     {item.step}
                   </div>
                   {index < 2 && (
@@ -314,12 +315,12 @@ export default function HomePage() {
           <div className="mx-auto mb-16 max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-slate-800 sm:text-4xl">
               Loved by{" "}
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent">
                 Creators
               </span>
             </h2>
             <p className="mt-4 text-lg text-slate-600">
-              See what our users are saying about AI Image Editor
+              See what our users are saying about AI IMAGE EDITOR
             </p>
           </div>
 
@@ -365,7 +366,7 @@ export default function HomePage() {
           <div className="mx-auto mb-16 max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-slate-800 sm:text-4xl">
               Start Creating{" "}
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent">
                 For Free
               </span>
             </h2>
@@ -376,7 +377,7 @@ export default function HomePage() {
 
           <div className="mx-auto max-w-lg">
             <Card className="relative overflow-hidden border-2 border-blue-300 bg-white/70 backdrop-blur-sm">
-              <div className="absolute top-0 right-0 bg-gradient-to-r from-blue-500 to-purple-600 px-4 py-1 text-sm font-medium text-white">
+              <div className="absolute top-0 right-0 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 px-4 py-1 text-sm font-medium text-white">
                 Free to Start
               </div>
               <CardContent className="p-8">
@@ -406,7 +407,7 @@ export default function HomePage() {
 
                 <Link href="/dashboard">
                   <Button
-                    className="w-full cursor-pointer gap-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700"
+                    className="w-full cursor-pointer gap-2 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 hover:from-blue-600 hover:to-purple-700"
                     size="lg"
                   >
                     <Sparkles className="h-4 w-4" />
@@ -438,7 +439,8 @@ export default function HomePage() {
               <Link href="/dashboard">
                 <Button
                   size="lg"
-                  className="cursor-pointer gap-2 bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-6 text-base hover:from-blue-600 hover:to-purple-700"
+                  className="cursor-pointer gap-2 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 px-8 py-6 text-base hover:from-blue-600 hover:to-purple-700"
+                  
                 >
                   <Sparkles className="h-5 w-5" />
                   Try It Free Now
@@ -466,11 +468,11 @@ export default function HomePage() {
             <div className="grid gap-8 md:grid-cols-4">
               <div className="md:col-span-2">
                 <div className="mb-4 flex items-center gap-2">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 shadow-lg">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 shadow-lg">
                     <Sparkles className="h-5 w-5 text-white" />
                   </div>
-                  <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-xl font-bold text-transparent">
-                    AI Image Editor
+                  <span className="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-xl font-bold text-transparent">
+                        AI IMAGE EDITOR
                   </span>
                 </div>
                 <p className="max-w-md text-slate-600">
@@ -541,7 +543,7 @@ export default function HomePage() {
             </div>
 
             <div className="mt-16 border-t border-slate-200 pt-8 text-center text-sm text-slate-500">
-              <p>&copy; 2025 AI Image Editor. All rights reserved.</p>
+              <p>&copy; 2025 AI IMAGE EDITOR. All rights reserved.</p>
             </div>
           </div>
         </div>

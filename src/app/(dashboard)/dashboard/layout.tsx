@@ -2,24 +2,24 @@ import "~/styles/globals.css";
 
 import { type Metadata } from "next";
 import { Providers } from "~/components/providers";
-import { Toaster } from "~/components/ui/sonner";
-import {
-  SidebarInset,
-  SidebarProvider,
-  SidebarTrigger,
-} from "~/components/ui/sidebar";
 import { AppSidebar } from "~/components/sidebar/app-sidebar";
+import BreadcrumbPageClient from "~/components/sidebar/breadcrumb-page-client";
+import {
+    Breadcrumb,
+    BreadcrumbItem,
+    BreadcrumbList,
+} from "~/components/ui/breadcrumb";
 import { Separator } from "~/components/ui/separator";
 import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbList,
-} from "~/components/ui/breadcrumb";
-import BreadcrumbPageClient from "~/components/sidebar/breadcrumb-page-client";
+    SidebarInset,
+    SidebarProvider,
+    SidebarTrigger,
+} from "~/components/ui/sidebar";
+import { Toaster } from "~/components/ui/sonner";
 
 export const metadata: Metadata = {
-  title: "AI Image Editor",
-  description: "AI Image Editor",
+  title: "AI IMAGE EDITOR",
+  description: "AI IMAGE EDITOR",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 

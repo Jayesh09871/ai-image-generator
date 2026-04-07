@@ -1,32 +1,32 @@
 "use client";
 
 import { RedirectToSignIn, SignedIn } from "@daveyplate/better-auth-ui";
+import { Image as ImageKitImage, upload } from "@imagekit/next";
 import {
-  Loader2,
-  Upload,
-  X,
-  Image as ImageIcon,
-  Scissors,
   Download,
   Expand,
-  Target,
-  RotateCcw,
+  Image as ImageIcon,
+  Loader2,
   Minus,
+  RotateCcw,
+  Scissors,
+  Target,
+  Upload,
+  X,
 } from "lucide-react";
-import { authClient } from "~/lib/auth-client";
-import { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
+import { toast } from "sonner";
+import {
+  createProject,
+  deductCredits,
+  getUserProjects,
+} from "~/actions/projects";
 import { Button } from "~/components/ui/button";
 import { Card, CardContent } from "~/components/ui/card";
 import { Input } from "~/components/ui/input";
-import { toast } from "sonner";
 import { env } from "~/env";
-import { upload, Image as ImageKitImage } from "@imagekit/next";
-import {
-  createProject,
-  getUserProjects,
-  deductCredits,
-} from "~/actions/projects";
+import { authClient } from "~/lib/auth-client";
 
 interface UploadedImage {
   fileId: string;
@@ -682,7 +682,7 @@ export default function CreatePage() {
                             <Button
                               onClick={downloadImage}
                               size="sm"
-                              className="h-7 gap-1 bg-gradient-to-r from-blue-600 to-purple-600 px-2 hover:from-blue-700 hover:to-purple-700"
+                              className="h-7 gap-1 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 px-2 hover:from-blue-700 hover:to-purple-700"
                             >
                               <Download className="h-3 w-3" />
                               <span className="text-xs">Download</span>
