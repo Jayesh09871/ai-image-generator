@@ -1,6 +1,3 @@
-"use server";
-
-import { UserButton } from "@daveyplate/better-auth-ui";
 import {
   Sidebar,
   SidebarContent,
@@ -12,12 +9,13 @@ import {
 } from "../ui/sidebar";
 import Credits from "./credits";
 import SidebarMenuItems from "./sidebar-menu-items";
-import { User, Sparkles, Settings } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import Upgrade from "./upgrade";
 import MobileSidebarClose from "./mobile-sidebar-close";
 import Link from "next/link";
+import UserButtonClient from "./user-button-client";
 
-export async function AppSidebar() {
+export function AppSidebar() {
   return (
     <Sidebar className="from-background to-muted/20 border-r-0 bg-gradient-to-b">
       <SidebarContent className="px-3">
@@ -46,22 +44,10 @@ export async function AppSidebar() {
           <Credits />
           <Upgrade />
         </div>
-        <UserButton
+        <UserButtonClient
           variant="outline"
           className="border-muted-foreground/20 hover:border-primary/50 w-full transition-colors"
           disableDefaultLinks={true}
-          additionalLinks={[
-            {
-              label: "Customer Portal",
-              href: "/dashboard/customer-portal",
-              icon: <User className="h-4 w-4" />,
-            },
-            {
-              label: "Settings",
-              href: "/dashboard/settings",
-              icon: <Settings className="h-4 w-4" />,
-            },
-          ]}
         />
       </SidebarFooter>
     </Sidebar>
