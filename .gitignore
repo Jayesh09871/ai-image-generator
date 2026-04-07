@@ -35,9 +35,14 @@ yarn-error.log*
 # do not commit any .env files to git
 .env
 .env*.local
+
 .env.example
 
+.envexample
+
 .env*.example
+
+
 
 # vercel
 .vercel
